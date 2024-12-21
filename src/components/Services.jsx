@@ -1,7 +1,7 @@
 import Button from './Button';
 import Card from './Card';
 
-const Services = () => {
+const Services = ({ arroClass }) => {
   return (
     <section
       id="services"
@@ -12,7 +12,7 @@ const Services = () => {
         loading="lazy"
         src="./assets/images/services/arrow.png"
         alt=""
-        className="absolute right-0 top-[-11rem] w-[20rem] hidden md:block "
+        className={`absolute right-0 top-[-11rem] w-[20rem] hidden md:block ${arroClass}`}
       />
       <h1 className="text-3xl inline font-extrabold  sm:text-4xl md:text-6xl">
         Our{' '}

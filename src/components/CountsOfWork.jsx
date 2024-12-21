@@ -7,9 +7,9 @@ const CountsOfWork = () => {
         <div className="flex py-10 flex-col justify-center items-center">
           <div>
             <CountUp
-              start={400}
+              start={600}
               end={750}
-              duration={10}
+              duration={48}
               className="text-xl font-bold  md:text-6xl"
             />
             <span className="text-xl font-extrabold text-[#ecb29b] md:text-6xl">
@@ -21,9 +21,9 @@ const CountsOfWork = () => {
         <div className="flex flex-col justify-center items-center">
           <div>
             <CountUp
-              start={49}
+              start={19}
               end={89}
-              duration={20}
+              duration={22}
               className="text-xl font-bold  md:text-6xl"
             />
             <span className="text-xl font-extrabold text-[#ecb29b]  md:text-6xl">
@@ -37,7 +37,7 @@ const CountsOfWork = () => {
             <CountUp
               start={0}
               end={28}
-              duration={14}
+              duration={18}
               className="text-xl font-bold  md:text-6xl"
             />
             <span className="text-xl font-extrabold text-[#ecb29b] md:text-6xl">

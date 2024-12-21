@@ -1,6 +1,6 @@
 import { div } from 'motion/react-client';
 
-const Card = ({ title = 'Card title', price = 30, crown, children }) => {
+const Card = ({ title = 'Card title', crown, children }) => {
   return (
     <div className="card  w-[24rem] h-[30rem]  shadow-xl  relative flex justify-center items-center overflow-hidden  ">
       {/* h-[25rem] */}
