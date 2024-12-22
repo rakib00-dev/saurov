@@ -15,7 +15,6 @@ const HomePage = () => {
       <Projects children={<ProjectEle />} />
       <Services />
       <About />
-      <Footer />
     </>
   );
 
