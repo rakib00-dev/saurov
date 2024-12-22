@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import { motion, useScroll } from 'motion/react';
 import Toggle from '../components/Toggle';
 import { Outlet } from 'react-router';
+import Footer from '../components/Footer';
 
 const MainLayout = () => {
   const [isChecked, setIsChecked] = useState(true);
@@ -77,6 +78,7 @@ const MainLayout = () => {
         />
       </Navbar>
       <Outlet />
+      <Footer />
     </>
   );
 };
