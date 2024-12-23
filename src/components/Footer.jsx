@@ -7,6 +7,7 @@ import {
   FaTwitter,
 } from 'react-icons/fa6';
 import { FaYoutube } from 'react-icons/fa';
+import Button from './Button';
 
 const Footer = () => {
   return (
@@ -15,9 +16,9 @@ const Footer = () => {
       className="paddings innerWidth footer footer-center text-primary-content p-10 "
     >
       {/* footer container */}
-      <div className="p-4 flex justify-between gap-10 w-full">
+      <div className="p-4 flex justify-between gap-10 w-full mb-5">
         {/* content */}
-        <div className="flex flex-col justify-start text-start gap-16">
+        <div className="flex flex-col justify-start text-start gap-16 w-2/4">
           <div className="grid gap-3">
             <h1 className="text-5xl font-extrabold">Let’s talk!</h1>
             <p className="text-[1.1rem] font-bold">
@@ -41,44 +42,67 @@ const Footer = () => {
         </div>
 
         {/* form */}
-        <form id="form" action="https://api.web3forms.com/submit" method="POST">
+        <form
+          id="form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          className="w-1/2 flex flex-col gap-10 "
+        >
           <input type="hidden" name="access_key" value="" />
-          <div id="name-email-container">
-            <div id="name-container">
+          <div className="flex flex-row">
+            <div
+              id="name-container"
+              className="flex flex-col items-start gap-2 text-md w-1/2"
+            >
               <label for="name">Name</label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Enter Your Name"
+                placeholder="Md Hasan"
+                className="border-b-2 text-md bg-transparent py-3 pr-8 border-[#4b4b45cc] outline-none    "
                 required
               />
             </div>
-            <div id="email-container">
+            <div
+              id="email-container"
+              className="flex flex-col items-start gap-2 text-md w-1/2"
+            >
               <label for="email">Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Enter Your Email"
+                placeholder="example@gamil.com"
+                className="border-b-2 text-md border-red bg-transparent py-3 pr-8 border-[#4b4b45cc] outline-none   "
                 required
               />
             </div>
           </div>
-          <div id="message-container">
+          <div
+            id="message-container"
+            className="flex flex-col items-start gap-2 text-md "
+          >
             <label for="message">Message</label>
             <textarea
               type="text"
               id="message"
               name="message"
-              placeholder="Enter Your Message"
+              placeholder="Hi There!"
+              className="border-b-2 text-md border-red bg-transparent py-2 pr-8 border-[#4b4b45cc] outline-none   w-full "
               required
               spellcheck="false"
             ></textarea>
           </div>
-          <button type="submit" class="btn submit">
-            Submit
-          </button>
+          <div>
+            <button type="submit" className="flex justify-start">
+              <Button
+                type="submit"
+                text={'Say Hello!'}
+                className={'sm:rounded-full'}
+              />
+            </button>
+          </div>
         </form>
       </div>
 
