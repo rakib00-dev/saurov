@@ -105,6 +105,7 @@ const Navbar = ({ className, children, toggle }) => {
             <Button
               text={'Book A Call'}
               fontSize={'xl'}
+              border="full"
               className={
                 'scale-95 hover:scale-100 cursor-pointer px-4 py-2 text-xs md:text-md lg:text-lg'
               }
