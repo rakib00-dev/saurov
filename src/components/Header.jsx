@@ -108,6 +108,7 @@ const Header = () => {
             <Button
               text={'Book Your Call Now!'}
               fontSize={'xl 2xl'}
+              border="full"
               className={'scale-90 hover:scale-125 md:scale-105'}
             ></Button>
           </a>
