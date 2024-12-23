@@ -86,19 +86,34 @@ const Footer = () => {
       <div className="bg-[#ffd2b6ed] rounded-full py-2 px-5 ">
         <div className="grid grid-flow-col gap-4 *:cursor-pointer ">
           {/* *:invert */}
-          <a className="p-2 bg-[#dcb7a0ed] rounded-full hover:bg-[#ffd2b6ed] transition-all">
+          <a
+            href=""
+            className="p-2 bg-[#dcb7a0ed] rounded-full hover:bg-[#ffd2b6ed] transition-all"
+          >
             <FaTwitter className="w-6 h-6" />
           </a>
-          <a className="p-2 bg-[#dcb7a0ed] rounded-full hover:bg-[#ffd2b6ed] transition-all">
+          <a
+            href=""
+            className="p-2 bg-[#dcb7a0ed] rounded-full hover:bg-[#ffd2b6ed] transition-all"
+          >
             <FaYoutube className="h-6 w-6" />
           </a>
-          <a className="p-2 bg-[#dcb7a0ed] rounded-full hover:bg-[#ffd2b6ed] transition-all ">
+          <a
+            href="https://www.facebook.com/avoid.saurov/"
+            className="p-2 bg-[#dcb7a0ed] rounded-full hover:bg-[#ffd2b6ed] transition-all "
+          >
             <FaFacebookF className="h-6 w-6" />
           </a>
-          <a className="p-2 bg-[#dcb7a0ed] rounded-full hover:bg-[#ffd2b6ed] transition-all ">
+          <a
+            href="https://www.linkedin.com/in/saurov.developer"
+            className="p-2 bg-[#dcb7a0ed] rounded-full hover:bg-[#ffd2b6ed] transition-all "
+          >
             <FaLinkedinIn className="h-6 w-6" />
           </a>
-          <a className="p-2 bg-[#dcb7a0ed] rounded-full hover:bg-[#ffd2b6ed] transition-all ">
+          <a
+            href="https://www.instagram.com/avoid.saurov"
+            className="p-2 bg-[#dcb7a0ed] rounded-full hover:bg-[#ffd2b6ed] transition-all "
+          >
             <FaInstagram className="h-6 w-6" />
           </a>
         </div>
