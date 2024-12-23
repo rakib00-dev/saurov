@@ -16,16 +16,16 @@ const Footer = () => {
       className="paddings innerWidth footer footer-center text-primary-content p-10 "
     >
       {/* footer container */}
-      <div className="p-4 flex justify-between gap-10 w-full mb-5">
+      <div className="p-4 flex flex-col justify-between items-start gap-10 w-full mb-5 md:flex-row">
         {/* content */}
-        <div className="flex flex-col justify-start text-start gap-16 w-2/4">
-          <div className="grid gap-3">
-            <h1 className="text-5xl font-extrabold">Let’s talk!</h1>
+        <div className="flex flex-col justify-start text-start gap-16 mb-5 w-full md:w-1/2 md:mb-0">
+          <div className="grid gap-3 w-full">
+            <h1 className="text-5xl font-extrabold w-full">Let’s talk!</h1>
             <p className="text-[1.1rem] font-bold">
               Ask us anything or just say hi 🖐
             </p>
           </div>
-          <div className="flex flex-col items-start gap-3">
+          <div className="flex flex-col items-start gap-5 ">
             <a
               href="maillto:saurov.inovate@gmail.com"
               className="flex justify-center items-center gap-2 text-[1.1rem]"
@@ -46,13 +46,13 @@ const Footer = () => {
           id="form"
           action="https://api.web3forms.com/submit"
           method="POST"
-          className="w-1/2 flex flex-col gap-10 "
+          className="flex flex-col gap-10 w-full md:w-1/2"
         >
           <input type="hidden" name="access_key" value="" />
-          <div className="flex flex-row">
+          <div className="flex flex-row gap-2">
             <div
               id="name-container"
-              className="flex flex-col items-start gap-2 text-md w-1/2"
+              className="flex flex-col items-start gap-2 text-md w-1/2 mr-3"
             >
               <label for="name">Name</label>
               <input
@@ -60,7 +60,7 @@ const Footer = () => {
                 id="name"
                 name="name"
                 placeholder="Md Hasan"
-                className="border-b-2 text-md bg-transparent py-3 pr-8 border-[#4b4b45cc] outline-none    "
+                className="border-b-2 text-md bg-transparent py-3 pr-8 pl-1 border-[#4b4b45cc] outline-none    "
                 required
               />
             </div>
@@ -74,7 +74,7 @@ const Footer = () => {
                 id="email"
                 name="email"
                 placeholder="example@gamil.com"
-                className="border-b-2 text-md border-red bg-transparent py-3 pr-8 border-[#4b4b45cc] outline-none   "
+                className="border-b-2 text-md border-red bg-transparent py-3 pr-8 pl-1 border-[#4b4b45cc] outline-none   "
                 required
               />
             </div>
@@ -89,18 +89,14 @@ const Footer = () => {
               id="message"
               name="message"
               placeholder="Hi There!"
-              className="border-b-2 text-md border-red bg-transparent py-2 pr-8 border-[#4b4b45cc] outline-none   w-full "
+              className="border-b-2 text-md border-red bg-transparent py-2 pr-8 pl-1 border-[#4b4b45cc] outline-none   w-full "
               required
               spellcheck="false"
             ></textarea>
           </div>
           <div>
             <button type="submit" className="flex justify-start">
-              <Button
-                type="submit"
-                text={'Say Hello!'}
-                className={'sm:rounded-full'}
-              />
+              <Button type="submit" text={'Say Hello!'} border="full" />
             </button>
           </div>
         </form>
