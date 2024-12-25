@@ -2,9 +2,8 @@ import Companies from '../components/Companies';
 import CountsOfWork from '../components/CountsOfWork';
 import Header from '../components/Header';
 import Projects from '../components/Projects';
-import Services from '../components/Services';
 import About from '../components/About';
-import Footer from '../components/Footer';
+import ServicesPage from './ServicesPage';
 
 const HomePage = () => {
   return (
@@ -13,7 +12,7 @@ const HomePage = () => {
       <Companies />
       <CountsOfWork />
       <Projects children={<ProjectEle />} />
-      <Services />
+      <ServicesPage />
       <About />
     </>
   );

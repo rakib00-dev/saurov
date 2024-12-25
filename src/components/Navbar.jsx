@@ -71,7 +71,7 @@ const Navbar = ({ className, children, toggle }) => {
             </li>
             <li>
               <Link
-                to="projects"
+                to="/projects"
                 className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Projects
@@ -79,7 +79,7 @@ const Navbar = ({ className, children, toggle }) => {
             </li>
             <li>
               <Link
-                to="services"
+                to="/services/pic"
                 className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Services
@@ -87,7 +87,7 @@ const Navbar = ({ className, children, toggle }) => {
             </li>
             <li>
               <Link
-                to="about"
+                to="/about"
                 className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 About
@@ -95,7 +95,7 @@ const Navbar = ({ className, children, toggle }) => {
             </li>
             <li>
               <Link
-                to="contact"
+                to="/contact"
                 className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Contact us
