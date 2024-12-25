@@ -95,7 +95,10 @@ const Footer = () => {
             ></textarea>
           </div>
           <div>
-            <button type="submit" className="flex justify-start">
+            <button
+              type="submit"
+              className="flex justify-start transition-all hover:scale-110"
+            >
               <Button type="submit" text={'Say Hello!'} border="full" />
             </button>
           </div>
