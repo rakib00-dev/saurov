@@ -6,8 +6,8 @@ const Services = () => {
     console.log(isActive);
 
     return isActive
-      ? 'px-5 py-4 text-lg font-semibold border-b-2 border-[#db8f02]'
-      : 'px-5 py-4 text-lg font-semibold ';
+      ? 'px-5 py-6 text-lg font-semibold border-b-2 border-[#db8f02]'
+      : 'px-5 py-6 text-lg font-semibold ';
   };
 
   return (
@@ -27,9 +27,9 @@ const Services = () => {
           services
         </h1>
         {/* services */}
-        <div className="p-1 innerWidth flex justify-center items-start gap-12 mt-12 flex-row md:p-6 lg:flex-row">
+        <div className="p-1 innerWidth h-fit  flex justify-center items-start gap-12 mt-12 flex-row md:p-6 lg:flex-row">
           {/* menues */}
-          <div className="flex flex-col">
+          <div className="flex flex-col justify-center items-center  ">
             <NavLink to={'/services/pic'} className={activeLink}>
               Picture Editing
             </NavLink>
@@ -43,10 +43,11 @@ const Services = () => {
               Post Producing
             </NavLink>
           </div>
-          <Outlet />
 
           {/* services */}
-          <div></div>
+          <div>
+            <Outlet />
+          </div>
         </div>
       </section>
     </>
