@@ -1,9 +1,10 @@
+import { RouterProvider, createBrowserRouter } from 'react-router';
 import Companies from '../components/Companies';
 import CountsOfWork from '../components/CountsOfWork';
 import Header from '../components/Header';
 import Projects from '../components/Projects';
 import About from '../components/About';
-import ServicesPage from './ServicesPage';
+import LandingService from '../components/LandingService';
 
 const HomePage = () => {
   return (
@@ -12,7 +13,7 @@ const HomePage = () => {
       <Companies />
       <CountsOfWork />
       <Projects children={<ProjectEle />} />
-      <ServicesPage />
+      <LandingService />
       <About />
     </>
   );

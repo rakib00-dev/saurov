@@ -21,6 +21,24 @@ function App() {
         {
           path: '/',
           element: <HomePage />,
+          children: [
+            {
+              path: '/',
+              element: <ServicesPictureCard />,
+            },
+            {
+              path: '/mot',
+              element: <ServicesMotionCard />,
+            },
+            {
+              path: '/col',
+              element: <ServicesColorCard />,
+            },
+            {
+              path: '/pos',
+              element: <ServicesPostCard />,
+            },
+          ],
         },
         {
           path: '/projects',

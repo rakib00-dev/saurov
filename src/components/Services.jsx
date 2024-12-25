@@ -1,7 +1,12 @@
 import { NavLink, Outlet } from 'react-router';
 import Button from './Button';
 
-const Services = () => {
+const Services = ({
+  toPic = '/services/pic',
+  toMot = '/services/mot',
+  toCol = '/services/col',
+  toPos = '/services/pos',
+}) => {
   const activeLink = ({ isActive }) => {
     console.log(isActive);
 
@@ -30,16 +35,16 @@ const Services = () => {
         <div className="p-1 innerWidth h-fit  flex justify-center items-start gap-12 mt-12 flex-row md:p-6 lg:flex-row">
           {/* menues */}
           <div className="flex flex-col justify-center items-center  ">
-            <NavLink to={'/services/pic'} className={activeLink}>
+            <NavLink to={toPic} className={activeLink}>
               Picture Editing
             </NavLink>
-            <NavLink to={'/services/mot'} className={activeLink}>
+            <NavLink to={toMot} className={activeLink}>
               Motion Design
             </NavLink>
-            <NavLink to={'/services/col'} className={activeLink}>
+            <NavLink to={toCol} className={activeLink}>
               Color Grading
             </NavLink>
-            <NavLink to={'/services/pos'} className={activeLink}>
+            <NavLink to={toPos} className={activeLink}>
               Post Producing
             </NavLink>
           </div>
