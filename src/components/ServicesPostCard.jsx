@@ -1,10 +1,7 @@
 const ServicesPostCard = () => {
   return (
     <>
-      <img
-        src="../assets/images/services/motiondesign.png"
-        alt="motion design"
-      />
+      <img src="../assets/images/services/post.png" alt="motion design" />
     </>
   );
 };

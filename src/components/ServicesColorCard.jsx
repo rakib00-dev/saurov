@@ -1,10 +1,7 @@
 const ServicesColorCard = () => {
   return (
     <>
-      <img
-        src="../assets/images/services/motiondesign.png"
-        alt="motion design"
-      />
+      <img src="../assets/images/services/color.png" alt="motion design" />
     </>
   );
 };
