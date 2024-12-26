@@ -32,9 +32,9 @@ const Services = ({
           services
         </h1>
         {/* services */}
-        <div className="p-1 innerWidth h-fit flex justify-center items-center gap-12 mt-12 flex-col md:p-6 lg:flex-row lg:items-start">
+        <div className="p-1 innerWidth h-fit flex justify-center items-center mt-12 flex-col md:p-6 lg:flex-row lg:items-start">
           {/* menues */}
-          <div className="flex flex-col justify-center items-center  ">
+          <div className="flex flex-col justify-center items-center w-1/2 md:w-1/3">
             <NavLink to={toPic} className={activeLink}>
               Picture Editing
             </NavLink>
@@ -50,7 +50,7 @@ const Services = ({
           </div>
 
           {/* services */}
-          <div className="grid place-content-center w-full">
+          <div className="grid place-content-center w-full md:place-content-start">
             <Outlet />
           </div>
         </div>
