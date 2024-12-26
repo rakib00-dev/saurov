@@ -30,9 +30,6 @@
   );
 
   --border: rgba(185, 98, 63, 0.822);
-
-  /* --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%); */
-  /* --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%); */
   --shadow: 0px 23px 21px -8px rgba(255, 186, 136, 0.25);
 }
 
