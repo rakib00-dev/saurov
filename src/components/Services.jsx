@@ -19,7 +19,7 @@ const Services = ({
     <>
       <section
         id="services"
-        className="paddings innerWidth gird items-center relative "
+        className="paddings innerWidth gird items-center relative overflow-hidden"
       >
         <h1 className="text-3xl inline font-extrabold  sm:text-4xl md:text-6xl">
           Our{' '}
@@ -32,7 +32,7 @@ const Services = ({
           services
         </h1>
         {/* services */}
-        <div className="p-1 innerWidth h-fit  flex justify-center items-start gap-12 mt-12 flex-row md:p-6 lg:flex-row">
+        <div className="p-1 innerWidth h-fit flex justify-center items-center gap-12 mt-12 flex-col md:p-6 lg:flex-row lg:items-start">
           {/* menues */}
           <div className="flex flex-col justify-center items-center  ">
             <NavLink to={toPic} className={activeLink}>
@@ -50,7 +50,7 @@ const Services = ({
           </div>
 
           {/* services */}
-          <div>
+          <div className="grid place-content-center w-full">
             <Outlet />
           </div>
         </div>

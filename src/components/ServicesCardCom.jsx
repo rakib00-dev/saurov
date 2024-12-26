@@ -1,10 +1,12 @@
 const ServicesCardCom = ({ src, children }) => {
   return (
     <>
-      <div className="w-[550px]">
-        <img src={src} alt={src} className="w-full" />
+      <div className="w-[550px] flex justify-center items-center">
+        <img src={src} alt={src} className="w-3/4" />
       </div>
-      <ul className="mt-8">{children}</ul>
+      <ul className="flex flex-col justify-center mt-8 text-sm m-auto w-96">
+        {children}
+      </ul>
     </>
   );
 };
