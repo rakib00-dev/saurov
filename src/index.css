@@ -53,7 +53,7 @@ aside > * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Manrope', 'Manrope Placeholder', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   scroll-behavior: smooth;
   font-size: 1 rem;
   /* color: #1c1c1c; */
