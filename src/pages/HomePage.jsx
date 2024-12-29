@@ -29,7 +29,7 @@ const HomePage = () => {
           loop
         >
           <source
-            src="./assets/videos/YouTube-Talking-Head-style.mp4"
+            src="./assets/videos/projects/YouTube-Talking-Head-style.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -44,7 +44,7 @@ const HomePage = () => {
           loop
         >
           <source
-            src="./assets/videos/Animated-Health-Shorts.mp4"
+            src="./assets/videos/projects/Animated-Health-Shorts.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
