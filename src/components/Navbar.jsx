@@ -19,16 +19,17 @@ const Navbar = ({ className, children, toggle }) => {
   return (
     <motion.section
       id="nav"
-      data-theme="retro"
+      // data-theme=""
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
         delay: 0.8,
         type: 'spring',
       }}
-      className={`nav-wrapper  ${className} `}
+      className={`nav-wrapper absolute top-0 w-full z-10 ${className} `}
       // style={{ : '' }}
     >
+      <div className="absolute inset-0 bg-white/20 filter blur-[42px] z-[-1] backdrop-blur-[2px]"></div>
       {/* nav-container */}
       <div
         className="navbar h-fit p-3 flexCenter innerWidth nav-container gap-0 md:gap-22 lg:gap-44 "
