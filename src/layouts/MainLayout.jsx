@@ -23,7 +23,7 @@ const MainLayout = () => {
 
     if (isChecked) {
       htmlTag.dataset.theme = 'retro';
-      navTag.dataset.theme = 'retro';
+      // navTag.dataset.theme = 'retro';
       allElements.forEach((e) => {
         e.style.color = 'black';
       });
@@ -33,7 +33,7 @@ const MainLayout = () => {
       console.log('retro');
     } else {
       htmlTag.dataset.theme = 'dark';
-      navTag.dataset.theme = 'dark';
+      // navTag.dataset.theme = 'dark';
       allElements.forEach((e) => {
         e.style.color = 'white';
       });
@@ -50,6 +50,7 @@ const MainLayout = () => {
   const [active, setActive] = useState(false);
 
   window.addEventListener('scroll', () => {
+    const navTag = document.getElementById('nav');
     const winYscroll = window.scrollY;
     if (winYscroll >= 92) {
       setActive(true);
