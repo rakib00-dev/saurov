@@ -16,7 +16,7 @@ function App() {
     {
       path: '/',
       element: <MainLayout />,
-      errorElement: <ErrorPage />,
+      // errorElement: <ErrorPage />,
       children: [
         {
           path: '/',
