@@ -4,10 +4,12 @@ import Header from '../components/Header';
 import Projects from '../components/Projects';
 import About from '../components/About';
 import LandingService from '../components/LandingService';
+import VideoHero from '../components/VideoHero';
 
 const HomePage = () => {
   return (
     <>
+      <VideoHero />
       <Header />
       <Companies />
       <CountsOfWork />
