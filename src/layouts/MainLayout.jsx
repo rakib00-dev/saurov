@@ -62,9 +62,7 @@ const MainLayout = () => {
   return (
     <>
       <Navbar
-        className={
-          active ? 'sticky top-0 z-10 border-b-2 border-[#3636367b]' : ''
-        }
+        className={active ? 'sticky top-0 border-b-2 border-[#3636367b]' : ''}
         toggle={<Toggle checkCheckBox={isClickedFun} />}
       >
         <motion.div

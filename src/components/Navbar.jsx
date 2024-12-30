@@ -26,7 +26,7 @@ const Navbar = ({ className, children, toggle }) => {
         delay: 0.8,
         type: 'spring',
       }}
-      className={`nav-wrapper absolute top-0 w-full z-10 ${className} `}
+      className={`nav-wrapper absolute top-0 w-screen z-10 ${className} `}
       // style={{ : '' }}
     >
       <div className="absolute inset-0 bg-white/20 filter blur-[42px] z-[-1] backdrop-blur-[2px]"></div>

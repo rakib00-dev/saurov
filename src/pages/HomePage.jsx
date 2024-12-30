@@ -9,10 +9,10 @@ import VideoHero from '../components/VideoHero';
 const HomePage = () => {
   return (
     <>
-      <VideoHero />
       <Header />
       <Companies />
       <CountsOfWork />
+      {/* <VideoHero /> */}
       <Projects children={<ProjectEle />} />
       <LandingService />
       <About />

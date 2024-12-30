@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="hero min-h-screen relative  ">
       {/* *:text-[#d5d1c5] */}
-      <motion.div
+      {/* <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
@@ -16,7 +16,7 @@ const Header = () => {
         style={{ borderColor: 'var(--border)' }}
       >
         Cinematic Editing Services, Creative Video Production, & More
-      </motion.div>
+      </motion.div> */}
 
       {/* header image content */}
       <div className="paddings innerWidth flexCenter hero-content justify-around gap-22 mt-32 flex-col sm:flex-row lg:flex-nowrap lg:flex-row-reverse">
