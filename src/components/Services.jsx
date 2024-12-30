@@ -34,7 +34,7 @@ const Services = ({
         {/* services */}
         <div className="p-1 innerWidth h-fit flex justify-center items-center mt-12 flex-col md:p-6 lg:flex-row lg:items-start">
           {/* menues */}
-          <div className="flex flex-col justify-center items-center w-4/5 md:w-1/3">
+          <div className="flex flex-col justify-center items-center w-4/5gi md:w-1/3">
             <NavLink to={toPic} className={activeLink}>
               Picture Editing
             </NavLink>
