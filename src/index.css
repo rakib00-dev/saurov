@@ -55,9 +55,9 @@ aside > * {
   /* color: white; */
 }
 
-/* body {
-  background-color: var(--black);
-} */
+body {
+  /* width: 100vw; */
+}
 
 a {
   color: inherit;
