@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" innerWidth paddings gird justify-center items-center relative w-full overflow-hidden rounded-2xl mb-10 md:w-4/6"
+      className="innerWidth paddings gird justify-center items-center relative w-full overflow-hidden rounded-2xl mb-10 md:w-4/6"
     >
       <h1 className="text-3xl flex gap-3 w-full font-extrabold justify-center sm:text-4xl md:text-6xl">
         Who {'   '}
