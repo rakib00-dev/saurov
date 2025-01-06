@@ -64,8 +64,8 @@ const MainLayout = () => {
       <Navbar
         className={
           active
-            ? 'sticky top-0 border-b-2 w-full border-[#3636367b] overflow-hidden'
-            : 'overflow-hidden w-full'
+            ? 'sticky top-0 border-b-2 w-full border-[#3636367b] '
+            : ' w-full'
         }
         toggle={<Toggle checkCheckBox={isClickedFun} />}
       >
