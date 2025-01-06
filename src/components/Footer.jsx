@@ -16,7 +16,7 @@ const Footer = () => {
       className="paddings innerWidth footer footer-center text-primary-content p-10 "
     >
       {/* footer container */}
-      <div className="p-4 flex flex-col justify-between items-start gap-10 w-full mb-5 md:flex-row">
+      <div className="flex flex-col justify-between items-start gap-10 w-full mb-5 md:flex-row">
         {/* content */}
         <div className="flex flex-col justify-start text-start gap-16 mb-5 w-full md:w-1/2 md:mb-0">
           <div className="grid gap-3 w-full">
@@ -49,7 +49,7 @@ const Footer = () => {
           className="flex flex-col gap-10 w-full md:w-1/2"
         >
           <input type="hidden" name="access_key" value="" />
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-col gap-2 md:flex-row">
             <div
               id="name-container"
               className="flex flex-col items-start gap-2 text-md w-1/2 mr-3"
@@ -89,7 +89,7 @@ const Footer = () => {
               id="message"
               name="message"
               placeholder="Hi There!"
-              className="border-b-2 text-md border-red bg-transparent py-2 pr-8 pl-1 border-[#4b4b45cc] outline-none   w-full "
+              className="border-b-2 text-md border-red bg-transparent border-[#4b4b45cc] outline-none w-4/5 md:py-2 md:pr-8 md:pl-1 md:w-full"
               required
               spellcheck="false"
             ></textarea>
