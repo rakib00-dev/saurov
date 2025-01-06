@@ -21,7 +21,7 @@ const About = () => {
 
       <div className="p-2 innerWidth w-full flex justify-center  items-center gap-12 mt-12 ">
         {/* about container */}
-        <div className="flex h-fit w-full justify-center items-center flex-col m-auto gap-6 lg:flex-row ">
+        <div className="flex h-fit w-full justify-center items-center flex-col m-auto gap-6 lg:flex-row md:W-4/5">
           <img
             src="./assets/images/hero/hero4.jpg"
             alt="about image"
