@@ -34,7 +34,7 @@ const Header = () => {
             delay: 1,
             type: 'spring',
           }}
-          className="relative rounded-lg  border-solid border-[#ac17626d] border w-[24rem] h-[13.5rem] shadow-2xl  "
+          className="relative rounded-lg  border-solid border-[#ac17626d] border w-full h-full shadow-2xl  md:w-[24rem] md:h-[13.5rem]"
         >
           {/* <motion.iframe
             initial={{ scale: 0.8, x: 100, opacity: 0 }}
@@ -56,7 +56,7 @@ const Header = () => {
               delay: 1,
               type: 'spring',
             }}
-            width="540"
+            // width="540"
             height="280"
             allow="autoplay"
             className="rounded-lg shadow-2xl bg-center w-full h-full"

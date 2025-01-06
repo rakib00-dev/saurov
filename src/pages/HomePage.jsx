@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <>
       {/* <VideoHero /> */}
-      {/* <Header /> */}
+      <Header />
       <Companies />
       <CountsOfWork />
       <Projects children={<ProjectEle />} />
