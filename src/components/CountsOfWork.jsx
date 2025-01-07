@@ -10,7 +10,7 @@ const CountsOfWork = () => {
               start={600}
               end={750}
               duration={48}
-              className="text-xl font-bold  md:text-6xl"
+              className="text-3xl font-bold  md:text-6xl"
             />
             <span className="text-xl font-extrabold text-[#ecb29b] md:text-6xl">
               +
@@ -24,7 +24,7 @@ const CountsOfWork = () => {
               start={19}
               end={89}
               duration={22}
-              className="text-xl font-bold  md:text-6xl"
+              className="text-3xl font-bold  md:text-6xl"
             />
             <span className="text-xl font-extrabold text-[#ecb29b]  md:text-6xl">
               +
@@ -38,7 +38,7 @@ const CountsOfWork = () => {
               start={0}
               end={28}
               duration={18}
-              className="text-xl font-bold  md:text-6xl"
+              className="text-3xl font-bold  md:text-6xl"
             />
             <span className="text-xl font-extrabold text-[#ecb29b] md:text-6xl">
               +
@@ -52,7 +52,7 @@ const CountsOfWork = () => {
               start={0}
               end={7}
               duration={20}
-              className="text-xl font-bold  md:text-6xl "
+              className="text-3xl font-bold  md:text-6xl "
             />
             <span className="text-xl font-extrabold text-[#ecb29b] md:text-6xl">
               {' '}
