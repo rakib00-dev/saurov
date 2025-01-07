@@ -104,7 +104,7 @@ const Navbar = ({ className, children, toggle }) => {
             </li>
             {/* </div> */}
             <Button
-              text={'Book A Call'}
+              text={"Let's Chat"}
               fontSize={'xl'}
               border="full"
               className={
