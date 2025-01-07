@@ -5,6 +5,7 @@ const Button = ({
   fontSize,
   text,
   className,
+  children,
 }) => {
   return (
     <span
@@ -14,6 +15,7 @@ const Button = ({
         padding: `${py}px ${px}px`,
       }}
     >
+      {children}
       {text}
     </span>
   );

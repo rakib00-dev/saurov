@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="paddings innerWidth footer footer-center text-primary-content p-10 "
+      className="paddings innerWidth footer footer-center text-primary-content p-10 overflow-hidden"
     >
       {/* footer container */}
       <div className="flex flex-col justify-between items-start gap-10 w-full mb-5 md:flex-row">
@@ -106,8 +106,8 @@ const Footer = () => {
       </div>
 
       {/* social media container */}
-      <div className="bg-[#ffd2b6ed] rounded-full py-2 px-5 ">
-        <div className="grid grid-flow-col gap-4 *:cursor-pointer ">
+      <div className="flex justify-start scale-90 bg-[#ffd2b6ed] rounded-full py-2 px-5 ">
+        <div className="grid grid-flow-col justify-center items-center gap-4 *:cursor-pointer ">
           {/* *:invert */}
           <a
             href=""
