@@ -20,7 +20,7 @@ const Toggle = (props) => {
         type="checkbox"
         className="toggle toggle-accent rounded-full"
         onChange={(e) => props.checkCheckBox(e)}
-        defaultChecked
+        // defaultChecked
       />
       <motion.span
         layout

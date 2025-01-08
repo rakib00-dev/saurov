@@ -6,7 +6,7 @@ import { Outlet } from 'react-router';
 import Footer from '../components/Footer';
 
 const MainLayout = () => {
-  const [isChecked, setIsChecked] = useState(true);
+  const [isChecked, setIsChecked] = useState(false);
   const isClickedFun = (e) => {
     setIsChecked(e.target.checked);
   };
