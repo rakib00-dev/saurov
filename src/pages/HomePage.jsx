@@ -5,17 +5,39 @@ import Projects from '../components/Projects';
 import About from '../components/About';
 import LandingService from '../components/LandingService';
 import VideoHero from '../components/VideoHero';
+import { motion } from 'motion/react';
+import { useState } from 'react';
 
 const HomePage = () => {
+  const [loaded, setLoaded] = useState(true);
+
   return (
     <>
-      <VideoHero />
-      <Header />
-      <Companies />
-      <CountsOfWork />
-      <Projects children={<ProjectEle />} />
-      <LandingService />
-      <About />
+      {loaded ? (
+        <motion.div className="fixed z-50 top-0 left-0 bg-red-500 h-screen w-screen  ">
+          <motion.h1
+            initial={{ scale: 0.8, x: 150, opacity: 0 }}
+            animate={{ scale: 1, x: 0, opacity: 1 }}
+            transition={{
+              delay: 1,
+              type: 'spring',
+            }}
+            className="flex justify-center items-center w-fit p-10 text-xl capitalize"
+          >
+            Wow Welcome At last you came to the right place{' '}
+          </motion.h1>
+        </motion.div>
+      ) : (
+        <>
+          <VideoHero />
+          <Header />
+          <Companies />
+          <CountsOfWork />
+          <Projects children={<ProjectEle />} />
+          <LandingService />
+          <About />
+        </>
+      )}
     </>
   );
 
