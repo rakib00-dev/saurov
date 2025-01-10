@@ -17,11 +17,10 @@ const HomePage = () => {
     window.addEventListener('load', () => {
       setTimeout(() => {
         loadingH1.current.classList.add = 'scale-125';
-        setLoading(false);
       }, 5000);
       console.log(4000);
-      setCount((currentCount) => currentCount++);
-      // console.log((loadingH1.current.innerText = 'good'));
+      // setCount((currentCount) => currentCount++);
+      console.log(currentCount);
     });
   }, []);
 
@@ -30,32 +29,37 @@ const HomePage = () => {
       {loading ? (
         <motion.div
           initial={{ right: '-100%', scale: 1, opacity: 1 }}
-          animate={{ right: 0, scale: 1.5, opacity: 0 }}
+          animate={{ right: 0, scale: 1.5, opacity: 1 }}
           transition={{
             delay: 2,
             type: 'spring',
           }}
-          className="fixed z-50 top-0 left-0 bg-black h-screen w-screen  "
+          className="fixed z-50 top-0 left-0 bg-black w-screen h-screen"
         >
+          <img
+            src="https://i.gifer.com/Ir4.gif"
+            alt=""
+            className="opacity-40 absolute top-0 left-0 bg-center bg-cover h-screen w-full"
+          />
           <motion.h1
             ref={loadingH1}
             initial={{
               right: '-123px',
               scale: 0,
               opacity: 1,
-              fontSize: '1.5rem',
+              // fontSize: '1.5rem',
             }}
             animate={{
               right: '0',
               scale: 1,
               opacity: 1,
-              fontSize: ` ${count}.5rem`,
+              // fontSize: ` ${count}.5rem`,
             }}
             transition={{
-              delay: 0.5,
+              delay: 2,
               type: 'spring',
             }}
-            className="transition-all flex justify-center items-center h-4/5 font-bold text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text w-fit p-10 text-xl capitalize"
+            className="transition-all flex justify-center  text-center items-center h-4/5 font-bold text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text w-fit p-10 text-xl capitalize"
           >
             Wow Welcome At last you came to the right place{' '}
           </motion.h1>

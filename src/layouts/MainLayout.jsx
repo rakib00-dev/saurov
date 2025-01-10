@@ -19,7 +19,7 @@ const MainLayout = () => {
     const companies = document.querySelectorAll('.company-filter');
     // const cardTitle = document.querySelectorAll('.card-title');
 
-    console.log(companies);
+    // console.log(companies);
 
     if (isChecked) {
       htmlTag.dataset.theme = 'retro';
