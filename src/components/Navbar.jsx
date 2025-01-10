@@ -27,7 +27,6 @@ const Navbar = ({ className, children, toggle }) => {
         type: 'spring',
       }}
       className={`nav-wrapper absolute top-0 left-0 w-full z-10 ${className} `}
-      // style={{ : '' }}
     >
       <div className="absolute inset-0 bg-white/20 filter blur-[42px] z-[-1] backdrop-blur-[2px]"></div>
       {/* nav-container */}
@@ -61,7 +60,6 @@ const Navbar = ({ className, children, toggle }) => {
             className="menu menu-horizontal px-4 flexCenter nav-menu gap-1 h-menu lg:gap-3 "
             style={getMenuStyle(menuOpened)}
           >
-            {/* <div className="flexCenter nav-menu gap-3 "> */}
             <li>
               <Link
                 to="/"
