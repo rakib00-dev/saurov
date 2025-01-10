@@ -36,11 +36,6 @@ const HomePage = () => {
           }}
           className="fixed z-50 top-0 left-0 bg-black w-screen h-screen"
         >
-          <img
-            src="https://i.gifer.com/Ir4.gif"
-            alt=""
-            className="opacity-100 absolute top-0 left-0 bg-center bg-cover h-screen w-full"
-          />
           <motion.h1
             ref={loadingH1}
             initial={{
