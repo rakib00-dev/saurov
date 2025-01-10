@@ -54,7 +54,7 @@ const Footer = () => {
               id="name-container"
               className="flex flex-col items-start gap-2 text-md w-1/2 mr-3"
             >
-              <label for="name">Name</label>
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 id="name"
@@ -68,7 +68,7 @@ const Footer = () => {
               id="email-container"
               className="flex flex-col items-start gap-2 text-md w-1/2"
             >
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input
                 type="email"
                 id="email"
@@ -83,7 +83,7 @@ const Footer = () => {
             id="message-container"
             className="flex flex-col items-start gap-2 text-md "
           >
-            <label for="message">Message</label>
+            <label htmlFor="message">Message</label>
             <textarea
               type="text"
               id="message"

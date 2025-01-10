@@ -6,23 +6,31 @@ import About from '../components/About';
 import LandingService from '../components/LandingService';
 import VideoHero from '../components/VideoHero';
 import { motion } from 'motion/react';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const HomePage = () => {
-  const [loaded, setLoaded] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const loadingH1 = useRef();
+
+  useEffect(() => {
+    window.addEventListener('load', () => {
+      console.log(200);
+    });
+  }, []);
 
   return (
     <>
-      {loaded ? (
-        <motion.div className="fixed z-50 top-0 left-0 bg-red-500 h-screen w-screen  ">
+      {loading ? (
+        <motion.div className="fixed z-50 top-0 left-0 bg-black h-screen w-screen  ">
           <motion.h1
-            initial={{ scale: 0.8, x: 150, opacity: 0 }}
-            animate={{ scale: 1, x: 0, opacity: 1 }}
+            ref={loadingH1}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
             transition={{
               delay: 1,
               type: 'spring',
             }}
-            className="flex justify-center items-center w-fit p-10 text-xl capitalize"
+            className="flex justify-center items-center h-4/5 font-bold w-fit p-10 text-xl capitalize"
           >
             Wow Welcome At last you came to the right place{' '}
           </motion.h1>
