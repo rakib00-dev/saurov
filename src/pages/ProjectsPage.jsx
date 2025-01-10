@@ -4,7 +4,7 @@ import Project from '../components/Projects';
 const ProjectsPage = () => {
   return (
     <>
-      <div className="m-20"></div>{' '}
+      <div className="m-20" />
       <Project children={<VideoElement />} classN={'flex'} />
     </>
   );
