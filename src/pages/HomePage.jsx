@@ -14,23 +14,36 @@ const HomePage = () => {
 
   useEffect(() => {
     window.addEventListener('load', () => {
-      console.log(200);
+      setTimeout(() => {
+        // loadingH1.current.classList.add = 'scale-125';
+        setLoading(false);
+      }, 3000);
+      console.log(4000);
+      // console.log((loadingH1.current.innerText = 'good'));
     });
   }, []);
 
   return (
     <>
       {loading ? (
-        <motion.div className="fixed z-50 top-0 left-0 bg-black h-screen w-screen  ">
+        <motion.div
+          initial={{ scale: 1, opacity: 1 }}
+          animate={{ scale: 1.5, opacity: 0 }}
+          transition={{
+            delay: 4,
+            type: 'spring',
+          }}
+          className="fixed z-50 top-0 left-0 bg-black h-screen w-screen  "
+        >
           <motion.h1
             ref={loadingH1}
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
+            initial={{ scale: 1, opacity: 1, fontSize: '1.5rem' }}
+            animate={{ scale: 1, opacity: 1, fontSize: '2.5rem' }}
             transition={{
-              delay: 1,
+              delay: 4,
               type: 'spring',
             }}
-            className="flex justify-center items-center h-4/5 font-bold w-fit p-10 text-xl capitalize"
+            className="transition-all flex justify-center items-center h-4/5 font-bold background bg-transparent w-fit p-10 text-xl capitalize"
           >
             Wow Welcome At last you came to the right place{' '}
           </motion.h1>
