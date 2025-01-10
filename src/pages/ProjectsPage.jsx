@@ -2,7 +2,12 @@ import React from 'react';
 import Project from '../components/Projects';
 
 const ProjectsPage = () => {
-  return <Project children={<VideoElement />} classN={'flex'} />;
+  return (
+    <>
+      <div className="m-20"></div>{' '}
+      <Project children={<VideoElement />} classN={'flex'} />
+    </>
+  );
 
   function VideoElement() {
     return (
