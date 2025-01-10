@@ -15,7 +15,9 @@ const MainLayout = () => {
     // theme
     const htmlTag = document.getElementById('html');
     const navTag = document.getElementById('nav');
-    let allElements = document.querySelectorAll('*');
+    let allDiv = document.querySelectorAll('div');
+    let allA = document.querySelectorAll('a');
+    let allP = document.querySelectorAll('p');
     const companies = document.querySelectorAll('.company-filter');
     // const cardTitle = document.querySelectorAll('.card-title');
 
@@ -24,7 +26,13 @@ const MainLayout = () => {
     if (isChecked) {
       htmlTag.dataset.theme = 'retro';
       // navTag.dataset.theme = 'retro';
-      allElements.forEach((e) => {
+      allDiv.forEach((e) => {
+        e.style.color = 'black';
+      });
+      allA.forEach((e) => {
+        e.style.color = 'black';
+      });
+      allP.forEach((e) => {
         e.style.color = 'black';
       });
       companies.forEach((e) => {
@@ -34,7 +42,13 @@ const MainLayout = () => {
     } else {
       htmlTag.dataset.theme = 'dark';
       // navTag.dataset.theme = 'dark';
-      allElements.forEach((e) => {
+      allDiv.forEach((e) => {
+        e.style.color = 'white';
+      });
+      allA.forEach((e) => {
+        e.style.color = 'white';
+      });
+      allP.forEach((e) => {
         e.style.color = 'white';
       });
       companies.forEach((e) => {
