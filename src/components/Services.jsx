@@ -8,8 +8,6 @@ const Services = ({
   toPos = '/services/pos',
 }) => {
   const activeLink = ({ isActive }) => {
-    console.log(isActive);
-
     return isActive
       ? 'px-5 py-6 text-lg font-semibold border-b-2 border-[#db8f02]'
       : 'px-5 py-6 text-lg font-semibold ';

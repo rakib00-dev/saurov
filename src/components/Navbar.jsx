@@ -10,8 +10,6 @@ const Navbar = ({ className, children, toggle }) => {
 
   const getMenuStyle = (menuOpened) => {
     if (document.documentElement.clientWidth <= 800) {
-      console.log(!menuOpened);
-
       return { top: !menuOpened && '-600%' };
     }
   };
@@ -111,8 +109,6 @@ const Navbar = ({ className, children, toggle }) => {
             />
             {toggle}
           </ul>
-          {/* <Link href="#"> */}
-          {/* </a> */}
         </OutsideClickHandler>
         {/* menu icon */}
         <div

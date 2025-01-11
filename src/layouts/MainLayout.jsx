@@ -19,9 +19,6 @@ const MainLayout = () => {
     let allA = document.querySelectorAll('a');
     let allP = document.querySelectorAll('p');
     const companies = document.querySelectorAll('.company-filter');
-    // const cardTitle = document.querySelectorAll('.card-title');
-
-    // console.log(companies);
 
     if (isChecked) {
       htmlTag.dataset.theme = 'retro';
